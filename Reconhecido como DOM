@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+    <script>
+        function multiplicação() {
+    var x = document.getElementById('n1').value
+    var y = document.getElementById('n2').value
+    var resultado = parseFloat(x) * parseFloat(y)
+    document.getElementById('res').innerHTML = resultado
+    }
+     
+     function divisão() {
+    var x = document.getElementById('n1').value
+    var y = document.getElementById('n2').value
+    var resultado = parseFloat(x) / parseFloat(y)
+    document.getElementById('res').innerHTML = resultado
+    }
+     
+    function somar() {
+    var x = document.getElementById('n1').value
+    var y = document.getElementById('n2').value
+    var resultado = parseFloat(x) + parseFloat(y)
+    document.getElementById('res').innerHTML = resultado
+    }
+     
+    function subtração() {
+    var x = document.getElementById('n1').value
+    var y = document.getElementById('n2').value
+    var resultado = parseFloat(x) - parseFloat(y)
+    document.getElementById('res').innerHTML = resultado
+    }
+    </script>
+    <input type="text" id="n1"><br>
+    <input type="text" id="n2"><br>
+    <input type="button" value="+" onClick="somar()">
+    <input type=button value="-" onclick="subtração()">
+    <input type=button onClick="divisão()" value="/">
+    <input type=button value="*" onclick="multiplicação()">
+    <br>
+    <p id="res">Aguardando valores...</p>
+
+
+
+
+
+
+
+
+</body>
+</html>
