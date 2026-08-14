@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">rapaz</h1>
+    <button onclick="mudartexto()">clica em mim >:D</button>
+    <p class="destaque"> oi oi</p>
+    <button onclick="mudarcor()">clica em mim agora >:D</button>
+    <ul class="item">
+        <li>oi</li>
+        <li>oi</li>
+        <li>3oi</li>
+    </ul>
+    <button onclick="texto()">clica mais >:D </button>
+    <p id="oculto" style="display: none;">segredo</p>
+    <input type="button" value="clicar :p" onclick="mostrar()">
+</body>
+<script>
+function mudartexto() {
+
+  const text = document.getElementById("titulo");
+  
+  text.textContent = "Olá, Mundo!";
+}
+
+function mudarcor(){
+ const cor = document.querySelector('.destaque')
+ cor.style.color = "blue"
+}
+
+function texto(){
+    const tex = document.querySelectorAll('.item')
+    tex.textContent = "Item modificado"
+}
+function mostrar(){
+    document.getElementById("oculto").style.display = "block";
+}
+
+</script>
+</html>
